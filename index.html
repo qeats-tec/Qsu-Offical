@@ -5,35 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qsu! - Ritim Oyunu</title>
     <style>
-        body {
-            background-color: #0a0a0c;
-            color: #fff;
-            font-family: 'Segoe UI', sans-serif;
-            text-align: center;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 100vh;
-        }
-        h1 { font-size: 4rem; margin-bottom: 0; color: #ff00ff; text-shadow: 0 0 20px #ff00ff; }
-        p { color: #888; margin-bottom: 30px; }
-        .download-btn {
-            background: linear-gradient(45deg, #ff00ff, #00ffff);
-            padding: 15px 40px;
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            border-radius: 50px;
-            font-size: 1.2rem;
-            transition: transform 0.2s;
-        }
+        body { background-color: #0a0a0c; color: #fff; font-family: 'Segoe UI', sans-serif; text-align: center; margin: 0; padding: 20px; }
+        h1 { font-size: 3.5rem; color: #ff00ff; text-shadow: 0 0 20px #ff00ff; }
+        .hero { margin: 50px 0; }
+        .download-btn { background: linear-gradient(45deg, #ff00ff, #00ffff); padding: 15px 40px; text-decoration: none; color: white; font-weight: bold; border-radius: 50px; font-size: 1.2rem; transition: transform 0.2s; display: inline-block; }
         .download-btn:hover { transform: scale(1.1); box-shadow: 0 0 20px #ff00ff; }
+        
+        /* Video Bölümü */
+        .tutorial { margin-top: 80px; max-width: 800px; margin-left: auto; margin-right: auto; text-align: left; background: #151518; padding: 30px; border-radius: 20px; }
+        video { width: 100%; border-radius: 10px; margin-top: 20px; border: 2px solid #333; }
     </style>
 </head>
 <body>
-    <h1>QSU!</h1>
-    <p>Ritmi hisset, sınırları zorla.</p>
-    <a href="Qsu_Setup.exe" class="download-btn">OYUNU İNDİR (Windows)</a>
+
+    <div class="hero">
+        <h1>QSU!</h1>
+        <p>Ritmi hisset, sınırları zorla.</p>
+        <br>
+        <a href="Qsu_Setup.exe" class="download-btn">OYUNU İNDİR</a>
+    </div>
+
+    <div class="tutorial">
+        <h2>Nasıl Kurulur?</h2>
+        <p>Aşağıdaki kısa videoda kurulum adımlarını görebilirsin:</p>
+        
+        <video controls>
+            <source src="kurulum.mp4" type="video/mp4">
+            Tarayıcınız video etiketini desteklemiyor.
+        </video>
+    </div>
+
 </body>
 </html>
